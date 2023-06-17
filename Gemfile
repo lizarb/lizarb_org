@@ -4,7 +4,7 @@
 source "https://rubygems.org"
 
 group :default do
-  gem "lizarb", "~> 1.0.5"
+  gem "lizarb", "~> 1.0.4"
   # gem "lizarb", github: "rubyonrails-brasil/lizarb"
 end
 
@@ -20,4 +20,11 @@ group :dev do
   
   # Terminal gems
   gem "pry", "~> 0.14.1"
+end
+
+group :web do
+  # gems you only want to load if WebSystem is loaded
+  gem "rack", "~> 3.0"
+  gem "rackup", "~> 0.2.2"
+  gem "puma", "~> 5.6"
 end

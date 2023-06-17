@@ -16,5 +16,6 @@ class App
   # Systems help you organize your application's dependencies and RAM memory usage.
 
   system :dev
+  system :web
 
 end
